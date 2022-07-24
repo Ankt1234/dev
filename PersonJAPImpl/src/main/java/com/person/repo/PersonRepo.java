@@ -22,6 +22,7 @@ public interface PersonRepo extends JpaRepository<Person, Integer>{
     List<Person> findByLastnameNotOrderBySalaryDesc(String name);
     List<Person> findBySalaryIn(List<Integer> list);
     List<Person> findBySalaryNotIn(List<Integer> list);
+    Person findByIdNotNull(int id);
     
 
 }
